@@ -89,3 +89,11 @@ call the func
 
 
 ## lesson 5
+
+#### Stack View
+
+#### Prevent the image from stretch
+
+    @IBOutlet weak var fastButton: UIButton!
+    fastButton.imageView?.contentMode = UIViewContentMode.scaleAspectFit
+
