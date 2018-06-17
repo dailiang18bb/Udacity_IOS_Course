@@ -67,3 +67,22 @@
 
 #### Delegate
 
+import protocal in the class definition
+
+    class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
+
+set delegate
+
+    // set delegate
+    audioRecorder.delegate = self
+    
+call the func
+    
+    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
+        print("finished recording")
+        if flag {
+            performSegue(withIdentifier: "stopRecording", sender: audioRecorder.url)
+        } else {
+            print("recording was not successful")
+        }
+    }
