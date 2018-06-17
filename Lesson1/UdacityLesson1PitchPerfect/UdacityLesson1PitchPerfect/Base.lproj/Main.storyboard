@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Record Sounds View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UdacityLesson1PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RecordSoundsViewController" customModule="UdacityLesson1PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,7 +40,6 @@
                                 <state key="normal" image="Stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zqm-Kx-5ja"/>
-                                    <segue destination="hhk-6v-7wl" kind="show" id="ZeZ-uA-HaD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -60,16 +59,17 @@
                         <outlet property="recordButton" destination="7xU-QU-bLx" id="Wsf-AR-Tmc"/>
                         <outlet property="recordingLabel" destination="CTb-6G-03v" id="TLV-II-kWe"/>
                         <outlet property="stopRecordingButton" destination="Uo3-9u-ofP" id="1p5-tE-yJs"/>
+                        <segue destination="hhk-6v-7wl" kind="show" identifier="stopRecording" id="itd-wa-6PA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="972" y="33.733133433283363"/>
         </scene>
-        <!--View Controller-->
+        <!--Play Sounds View Controller-->
         <scene sceneID="NEL-pF-SUt">
             <objects>
-                <viewController id="hhk-6v-7wl" sceneMemberID="viewController">
+                <viewController id="hhk-6v-7wl" customClass="PlaySoundsViewController" customModule="UdacityLesson1PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ek4-g2-PnQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
