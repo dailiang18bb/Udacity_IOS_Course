@@ -28,3 +28,11 @@
 3. change the view controller name in main.storyboard -> Identity inspector -> custom class -> class
 
 #### AVFoundtion
+
+
+
+
+
+#### Create new view controller class
+1. create file Cocoa touch class -> subclass of UIViewController
+2. click on the controller in the main.storyboard -> Identity inspector -> custom class -> class -> change to new controller
