@@ -67,7 +67,7 @@
 
 #### Delegate
 
-import protocal in the class definition
+import protocol in the class definition
 
     class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
 
@@ -86,3 +86,6 @@ call the func
             print("recording was not successful")
         }
     }
+
+
+## lesson 5
