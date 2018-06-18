@@ -2,11 +2,12 @@
 Learning IOS on Udacity
 
 
-
-ios 8 on itunes
+## Stanford courses
+ios 8 on itunes  
 https://itunes.apple.com/us/course/developing-ios-8-apps-swift/id961180099
 
-
+Developing iOS 11 Apps with Swift  
+https://itunes.apple.com/us/course/developing-ios-11-apps-with-swift/id1309275316
 ## Udacity IOS nanodegree
 https://www.udacity.com/course/ios-developer-nanodegree--nd003
 
