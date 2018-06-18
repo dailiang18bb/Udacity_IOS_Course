@@ -67,7 +67,7 @@
 
 #### Delegate
 
-import protocal in the class definition
+import protocol in the class definition
 
     class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
 
@@ -86,3 +86,14 @@ call the func
             print("recording was not successful")
         }
     }
+
+
+## lesson 5
+
+#### Stack View
+
+#### Prevent the image from stretch
+
+    @IBOutlet weak var fastButton: UIButton!
+    fastButton.imageView?.contentMode = UIViewContentMode.scaleAspectFit
+
