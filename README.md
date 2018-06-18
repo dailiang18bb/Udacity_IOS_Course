@@ -14,8 +14,8 @@ https://www.udacity.com/course/ios-developer-nanodegree--nd003
 * Welcome to the Nanodegree
 * Learn Swift Programming  
 
-https://www.udacity.com/course/swift-for-beginners--ud1022
-https://www.udacity.com/course/swift-for-developers--ud1025
+https://www.udacity.com/course/swift-for-beginners--ud1022  
+https://www.udacity.com/course/swift-for-developers--ud1025  
 https://www.udacity.com/course/learn-swift-programming-syntax--ud902
 
 * Intro to iOS App Development with Swift  
@@ -37,7 +37,7 @@ Virtual Tourist https://www.udacity.com/course/ios-persistence-and-core-data--ud
 
 * Final Project
 
-
+#### Other resources
 * How to Make an iOS App https://www.udacity.com/course/how-to-make-an-ios-app--ud607
 * Objective-C for Swift Developers https://www.udacity.com/course/objective-c-for-swift-developers--ud1009
 * Data Structures & Algorithms in Swift https://www.udacity.com/course/data-structures-and-algorithms-in-swift--ud1011
