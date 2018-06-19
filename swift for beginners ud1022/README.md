@@ -88,3 +88,7 @@ A string is “less than” another string if it comes first alphabetically:
         let apples = "apples"
         let oranges = "oranges"
         let compare = apples < oranges //true
+
+## && and ||
+and operator (&&)   
+or operator (| |)
