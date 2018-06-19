@@ -142,3 +142,15 @@ not operator (!)
         }
 ## Parameters vs. Arguments
 There are some special terms here that require special attention. When we look at the definition of a function like sayHelloToStudent(student: String), any input values that are specified are called parameters. Then, when we actually call a function, as in sayHelloToStudent(student: jarrod) the input values that are passed to the function are known as arguments.
+
+## Function Scope
+Parameters or values defined within a function cannot be accessed outside of a function.
+
+## Returning Values
+example
+
+        func nameOfFunction(/* parameters */) -> [Type] {
+            var valueToReturn: [Type]
+            // Rest of function
+            return valueToReturn
+        }
