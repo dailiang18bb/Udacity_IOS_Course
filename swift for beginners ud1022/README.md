@@ -19,3 +19,12 @@ You can also initialize an empty string like so:
 
         // And here's another
         let stringWithPotential = String()
+        
+
+## dot notation
+
+        // Loop through all the characters in a string
+        var animal = "octopus"
+        for character in animal.characters {
+                print ("\(character)")
+        }
