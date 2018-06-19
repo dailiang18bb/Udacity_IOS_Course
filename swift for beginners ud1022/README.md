@@ -75,3 +75,16 @@ Use the plus operator to concatenate strings,
         var newPassword = password.replacingOccurrences(of: "a", with: "A")
         // MAry hAd A little loris
 The syntax here, replacingOccurrences(of: "a", with: "A"), replaces the first string (“a”) with the second (“A”).
+
+
+# Lesson 3 If statements
+
+## The `==` Operator
+
+## Comparison operators can also be used on strings. 
+
+A string is “less than” another string if it comes first alphabetically:
+
+        let apples = "apples"
+        let oranges = "oranges"
+        let compare = apples < oranges //true
