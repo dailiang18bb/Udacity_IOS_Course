@@ -60,3 +60,9 @@ Use the plus operator to concatenate strings,
         let A = "I am A"
         let B = "I am B"
         let C = A + "," + B
+        
+## String contains
+
+        var word = "Charles"
+        word.contains("les")
+        // true
