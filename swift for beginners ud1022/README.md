@@ -92,3 +92,32 @@ A string is “less than” another string if it comes first alphabetically:
 ## && and ||
 and operator (&&)   
 or operator (| |)
+
+## The ! Operator
+not operator (!) 
+
+## example
+
+        var name = "Ayush"
+        var age = 19
+        var onGuestList = true
+
+        func admit(person: String) {
+            print("\(person), come and party with us!")
+        }
+
+        func deny(person: String) {
+            print("Sorry, \(person), maybe you can go play Bingo with the Android team.")
+        }
+
+        func screenUnder21(age: Int, onGuestList: Bool, person: String) {
+            if onGuestList && age >= 21 {
+                admit(person: person)
+            }
+
+            if !onGuestList || !(age >= 21) {
+                deny(person: person)
+            }
+        }
+
+        screenUnder21(age: age, onGuestList: onGuestList, person: name)
