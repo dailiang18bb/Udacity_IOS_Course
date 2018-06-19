@@ -121,3 +121,24 @@ not operator (!)
         }
 
         screenUnder21(age: age, onGuestList: onGuestList, person: name)
+
+##  multiple conditions
+
+        if breakfast {
+            print("Good morning!")
+        } else if lunch {
+            print("Good afternoon!")
+        } else if dinner {
+            print("Good evening!")
+        } else {
+            print("Hello!")
+        }
+        
+# Lesson4 Function Syntax
+## Functions without Parameters
+
+        func myFirstFunction() {
+            print("do something crazy!")
+        }
+## Parameters vs. Arguments
+There are some special terms here that require special attention. When we look at the definition of a function like sayHelloToStudent(student: String), any input values that are specified are called parameters. Then, when we actually call a function, as in sayHelloToStudent(student: jarrod) the input values that are passed to the function are known as arguments.
