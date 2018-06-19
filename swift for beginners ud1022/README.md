@@ -57,6 +57,6 @@ The syntax for string interpolation is: backslash, open parenthesis, variable na
 ## String Concatenation
 Use the plus operator to concatenate strings,
 
-let A = "I am A"
-let B = "I am B"
-let C = A + "," + B
+        let A = "I am A"
+        let B = "I am B"
+        let C = A + "," + B
