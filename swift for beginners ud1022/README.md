@@ -51,5 +51,12 @@ The syntax for string interpolation is: backslash, open parenthesis, variable na
 `\(variableName)`
 
         var name = "Kate"
-        var customizedBirthdayCheer = "Happy Birthday, \(name)!"
+        var myName = "Charles"
+        var customizedBirthdayCheer = "Happy Birthday, \(name) and \(myName)!"
 
+## String Concatenation
+Use the plus operator to concatenate strings,
+
+let A = "I am A"
+let B = "I am B"
+let C = A + "," + B
