@@ -11,6 +11,8 @@ A literal is a value that is written exactly as it's meant to be interpreted. In
 
 
 # Lesson 2 Strings
+[Official document about Strings](https://developer.apple.com/documentation/swift/string#//apple_ref/doc/uid/TP40015181-CH1-DontLinkElementID_31)
+
 
 You can also initialize an empty string like so:
 
