@@ -46,3 +46,10 @@ Using to access the functions
         var charactersReversed = forwardString.characters.reversed()
 
         
+## String interpolation
+The syntax for string interpolation is: backslash, open parenthesis, variable name, closed parenthesis.
+`\(variableName)`
+
+        var name = "Kate"
+        var customizedBirthdayCheer = "Happy Birthday, \(name)!"
+
