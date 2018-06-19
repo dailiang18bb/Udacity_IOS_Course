@@ -26,8 +26,23 @@ You can also initialize an empty string like so:
 ## dot syntax
 Using to access the functions
 
+`.characters`
+
         // Loop through all the characters in a string
         var animal = "octopus"
         for character in animal.characters {
                 print ("\(character)")
         }
+        
+
+`.characters.count`
+
+        let theTruth = "Money can't buy me love."
+        theTruth.characters.count
+        
+`.characters.reversed`
+
+        var forwardString = "spoons"
+        var charactersReversed = forwardString.characters.reversed()
+
+        
