@@ -23,7 +23,8 @@ You can also initialize an empty string like so:
         let stringWithPotential = String()
         
 
-## dot notation
+## dot syntax
+Using to access the functions
 
         // Loop through all the characters in a string
         var animal = "octopus"
