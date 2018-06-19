@@ -66,3 +66,11 @@ Use the plus operator to concatenate strings,
         var word = "Charles"
         word.contains("les")
         // true
+
+## Replacing a Substring
+`replacingOccurrences(of: , with:)`
+
+        // Replacing a substring 
+        var password = "Mary had a little loris"
+        var newPassword = password.replacingOccurrences(of: "a", with: "A")
+The syntax here, replacingOccurrences(of: "a", with: "A"), replaces the first string (“a”) with the second (“A”).
