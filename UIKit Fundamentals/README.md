@@ -79,3 +79,16 @@ Modality https://developer.apple.com/design/human-interface-guidelines/ios/app-a
             controller.addAction(okAction)
             self.present(controller, animated: true, completion: nil)
         }
+
+### Customize view controllers
+
+    @IBAction func rollTheDice() {
+
+            let controller: DiceViewController
+            controller = storyboard?.instantiateViewController(withIdentifier: "DiceViewController") as! DiceViewController
+
+            controller.firstValue = randomDiceValue()
+            controller.secondValue = randomDiceValue()
+
+            present(controller,animated: true,completion: nil)
+        }
