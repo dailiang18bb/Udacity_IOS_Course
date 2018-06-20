@@ -75,3 +75,97 @@ Use the plus operator to concatenate strings,
         var newPassword = password.replacingOccurrences(of: "a", with: "A")
         // MAry hAd A little loris
 The syntax here, replacingOccurrences(of: "a", with: "A"), replaces the first string (“a”) with the second (“A”).
+
+
+# Lesson 3 If statements
+
+## The `==` Operator
+
+## Comparison operators can also be used on strings. 
+
+A string is “less than” another string if it comes first alphabetically:
+
+        let apples = "apples"
+        let oranges = "oranges"
+        let compare = apples < oranges //true
+
+## && and ||
+and operator (&&)   
+or operator (| |)
+
+## The ! Operator
+not operator (!) 
+
+## example
+
+        var name = "Ayush"
+        var age = 19
+        var onGuestList = true
+
+        func admit(person: String) {
+            print("\(person), come and party with us!")
+        }
+
+        func deny(person: String) {
+            print("Sorry, \(person), maybe you can go play Bingo with the Android team.")
+        }
+
+        func screenUnder21(age: Int, onGuestList: Bool, person: String) {
+            if onGuestList && age >= 21 {
+                admit(person: person)
+            }
+
+            if !onGuestList || !(age >= 21) {
+                deny(person: person)
+            }
+        }
+
+        screenUnder21(age: age, onGuestList: onGuestList, person: name)
+
+##  multiple conditions
+
+        if breakfast {
+            print("Good morning!")
+        } else if lunch {
+            print("Good afternoon!")
+        } else if dinner {
+            print("Good evening!")
+        } else {
+            print("Hello!")
+        }
+        
+# Lesson4 Function Syntax
+## Functions without Parameters
+
+        func myFirstFunction() {
+            print("do something crazy!")
+        }
+## Parameters vs. Arguments
+There are some special terms here that require special attention. When we look at the definition of a function like sayHelloToStudent(student: String), any input values that are specified are called parameters. Then, when we actually call a function, as in sayHelloToStudent(student: jarrod) the input values that are passed to the function are known as arguments.
+
+## Function Scope
+Parameters or values defined within a function cannot be accessed outside of a function.
+
+## Returning Values
+example
+
+        func nameOfFunction(/* parameters */) -> [Type] {
+            var valueToReturn: [Type]
+            // Rest of function
+            return valueToReturn
+        }
+## Default Parameters and Using Functions
+example
+
+        func calculatePriceForMealWithTip(priceOfMeal: Double, tipPercentage: Double = 0.15) -> Double {
+            return priceOfMeal + (priceOfMeal * tipPercentage)
+        }
+
+        // This call uses the default tip of 15% (0.15)
+        calculatePriceForMealWithTip(priceOfMeal: 43.27)
+        calculatePriceForMealWithTip(priceOfMeal: 100.32, tipPercentage: 0.20)
+        calculatePriceForMealWithTip(priceOfMeal: 65.43)
+        calculatePriceForMealWithTip(priceOfMeal: 22.18)
+        
+        
+        
