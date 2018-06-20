@@ -84,11 +84,14 @@ Modality https://developer.apple.com/design/human-interface-guidelines/ios/app-a
 
     @IBAction func rollTheDice() {
 
-            let controller: DiceViewController
-            controller = storyboard?.instantiateViewController(withIdentifier: "DiceViewController") as! DiceViewController
+        // Get the DiceViewController
+        let controller: DiceViewController
+        controller = storyboard?.instantiateViewController(withIdentifier: "DiceViewController") as! DiceViewController
 
-            controller.firstValue = randomDiceValue()
-            controller.secondValue = randomDiceValue()
+        // Set the two values to random numbers from 1 to 6
+        controller.firstValue = randomDiceValue()
+        controller.secondValue = randomDiceValue()
 
-            present(controller,animated: true,completion: nil)
-        }
+        // Present the view Controller
+        present(controller, animated: true, completion: nil)
+    }
