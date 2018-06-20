@@ -3,26 +3,32 @@
 //: In this these, you will be given the description for functions and their expected output assuming they are implemented correctly. It will be your job to finish the implementations.
 //: ### Exercise 14
 //: The function `emojiLove` should take two `String` parameters and use them to print a `String` with  the format "stringParameterOne ❤️ stringParameterTwo".
-func emojiLove(/* add parameters here */) {
-    
+func emojiLove(s1:String,s2:String) {
+    print(s1 + " ❤️ " + s2)
 }
 
-/* Example Function Call
+ //Example Function Call
  
  emojiLove(s1: "cats", s2: "dogs") // prints "cats ❤️ dogs"
  emojiLove(s1: "udacity", s2: "students") // prints "udacity ❤️ students"
  emojiLove(s1: "peanut butter", s2: "jelly") // prints "peanut butter ❤️ jelly"
  emojiLove(s1: "ying", s2: "yang") // prints "ying ❤️ yang"
  
- */
+
 
 //: ### Exercise 15
 //: The function `median` should take three `Int` parameters and return the `Int` value in the middle.
-func median(/* add parameters here */) /* define the return type */ {
-    
+func median(num1:Int,num2:Int,num3:Int) -> Int {
+    if (num1 >= num2 && num1 <= num3) || (num1>=num3 && num1<=num2 )  {
+        return num1
+    } else if (num2 >= num3 && num2 <= num1) || (num2 >= num1 && num2 <= num3) {
+        return num2
+    } else {
+        return num3
+    }
 }
 
-/* Example Function Call
+// Example Function Call
  
  median(num1: 1, num2: 5, num3: 6) // 5
  median(num1: 2, num2: 1, num3: 4) // 2
@@ -32,7 +38,7 @@ func median(/* add parameters here */) /* define the return type */ {
  median(num1: 2, num2: 3, num3: 1) // 2
  median(num1: 2, num2: 2, num3: 1) // 2
  
- */
+
 
 /*:
  ### Exercise 16
@@ -45,19 +51,32 @@ func median(/* add parameters here */) /* define the return type */ {
  **It is assumed that the input string is given in English.**
  
  */
-func beginsWithVowel(/* add parameters here */) /* define the return type */ {
-    
+func beginsWithVowel(word: String) -> Bool {
+    if word.isEmpty {
+        return false
+    } else {
+        let newWord = word.uppercased()
+        if (newWord[newWord.startIndex] == "A") ||
+        (newWord[newWord.startIndex] == "E") ||
+        (newWord[newWord.startIndex] == "I") ||
+        (newWord[newWord.startIndex] == "O") ||
+        (newWord[newWord.startIndex] == "U"){
+            return true
+        } else{
+            return false
+        }
+    }
 }
 
-/* Example Function Call
+ //Example Function Call
  
- beginsWithVowel("Apples") // true
- beginsWithVowel("pIG") // false
- beginsWithVowel("oink") // true
- beginsWithVowel("udacity") // true
- beginsWithVowel("") // false
+ beginsWithVowel(word: "Apples") // true
+ beginsWithVowel(word: "pIG") // false
+ beginsWithVowel(word: "oink") // true
+ beginsWithVowel(word: "udacity") // true
+ beginsWithVowel(word: "") // false
  
- */
+
 
 /*:
  ### Exercise 17
@@ -70,17 +89,23 @@ func beginsWithVowel(/* add parameters here */) /* define the return type */ {
  
  Hint: Re-use the `beginsWithVowel` function.
  */
-func funWithWords(/* add parameters here */) /* define the return type */ {
-    
+func funWithWords(sub:String) -> String {
+    if sub.isEmpty{
+        return ""
+    } else if beginsWithVowel(word: sub) {
+        return sub.uppercased()
+    } else {
+        return sub.lowercased()
+    }
 }
 
-/* Example Function Call
+ //Example Function Call
  
- funWithWords("Apples") // "APPLES"
- funWithWords("pIG") // "pig"
- funWithWords("oink") // "OINK"
- funWithWords("udacity") // "UDACITY"
- funWithWords("") // ""
+ funWithWords(sub: "Apples") // "APPLES"
+ funWithWords(sub: "pIG") // "pig"
+ funWithWords(sub: "oink") // "OINK"
+ funWithWords(sub: "udacity") // "UDACITY"
+ funWithWords(sub: "") // ""
  
- */
+
 //: [Next](@next)

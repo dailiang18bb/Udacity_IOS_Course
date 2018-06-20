@@ -34,6 +34,16 @@ func release() {
 }
 
 func checkForRelease(bugs: Int, music: Bool, levels: Int) {
-    
+    if bugs < 10 && music && levels > 5{
+        release()
+    } else if bugs < 10 {
+        
+    } else if music{
+        
+    } else if levels > 5{
+        
+    }
 }
+
+checkForRelease(bugs: bugs, music: hasMusic, levels: numberOfLevels)
 //: [Next](@next)

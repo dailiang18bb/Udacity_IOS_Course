@@ -18,6 +18,14 @@ func deny(person: String) {
 
 func screen(onGuestList: Bool, person: String) {
     // TODO: Add your if statement here!
+    if onGuestList {
+        admit(person: person)
+    } else {
+        deny(person: person)
+    }
+    
 }
+
+screen(onGuestList: onGuestList, person: name)
 
 //: [Next](@next)

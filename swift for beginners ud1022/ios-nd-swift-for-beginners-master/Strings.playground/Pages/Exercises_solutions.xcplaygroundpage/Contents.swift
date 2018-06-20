@@ -15,14 +15,14 @@ let shoutString = "HEY!" + " " + didYouKnowString.uppercased()
 let howManyCharacters = "How much wood could a woodchuck chuck if a woodchuck could chuck wood?"
 
 // Solution
-let thisMany = howManyCharacters.count
+let thisMany = howManyCharacters.characters.count
 
 //: ### Exercise 3
 //: Reverse the characters in <word> and print out the result.
 let word = "deliver"
 
 // Solution
-let backwardsWord = word.reversed()
+let backwardsWord = word.characters.reversed()
 for character in backwardsWord {
     print(character)
 }

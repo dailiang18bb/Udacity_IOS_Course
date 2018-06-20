@@ -12,19 +12,21 @@ import UIKit
  - studentNickname (String)
  - teaspoonsNutmeg (Float)
  */
-
+var gallonsRemainingInTank: Double
+let ageOfSpecimenInWeeks: Int
+let studentNickname: String
+let teaspoonsNutmeg: Float
 //: ### Exercise 2
 //: Fix the following compiler errors related to assignment, variables, and constants:
-var favoriteLanguage: Character = "Swift"
-gallonsRemainingInTank = "2"
-ageOfSpecimenInWeeks = 32.45
-let teaspoonsCinnamon: Int = teaspoonsNutmeg
-
+var favoriteLanguage: String = "Swift"
+var gallonsRemainingInTank2: Int = 2
+var ageOfSpecimenInWeeks2: Double = 32.45
+let teaspoonsCinnamon: Int = 2
 //: ### Exercise 3
 //: Below is some code to reverse a string. We've declared the entities stringToReverse and arrayOfCharacters as variables. Rewrite this code to reverse a string using only constants declared with let, no variables. Note: In the new version you may use as many constants as you'd like.
-var stringToReverse = "Mutable or Immutable? That is the question."
-var arrayOfCharacters = stringToReverse.characters.reversed()
-stringToReverse = String(arrayOfCharacters)
+let stringToReverse = "Mutable or Immutable? That is the question."
+let arrayOfCharacters = stringToReverse.reversed()
+let newStringToReverse = String(arrayOfCharacters)
 /*: 
 ### Exercise 4
 
@@ -35,6 +37,10 @@ stringToReverse = String(arrayOfCharacters)
 - a String value representing a student’s birthday.
 - a String value representing what a user types into the status update area.
 */
+var animalHungerLevel: Int
+let scoreRequiredToWin: Int
+let studentBirthday: String
+var userInput: String
 
 
 
