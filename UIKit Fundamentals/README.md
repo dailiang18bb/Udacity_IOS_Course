@@ -95,3 +95,8 @@ Modality https://developer.apple.com/design/human-interface-guidelines/ios/app-a
         // Present the view Controller
         present(controller, animated: true, completion: nil)
     }
+    
+### Segue 
+
+        performSegue(withIdentifier: "rollDice", sender: self)
+
