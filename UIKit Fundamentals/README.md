@@ -7,3 +7,6 @@
     var label: UILabel!
 
 `!` indicate optional properties
+
+### The `self.` operator
+
