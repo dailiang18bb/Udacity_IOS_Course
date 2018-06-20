@@ -51,7 +51,7 @@ Modality https://developer.apple.com/design/human-interface-guidelines/ios/app-a
 ### stock view controllers
 * Image Picker Controller
 
-        @IBAction func experiment(_ sender: Any) {
+        @IBAction func experiment() {
 
             let nextController = UIImagePickerController()
             self.present(nextController, animated: true, completion: nil)
@@ -59,7 +59,7 @@ Modality https://developer.apple.com/design/human-interface-guidelines/ios/app-a
     
 * Activity View Controller
 
-        @IBAction func experiment(_ sender: Any) {
+        @IBAction func experiment() {
 
             let image = UIImage()
             let controller = UIActivityViewController(activityItems: [image], applicationActivities: nil)
@@ -67,7 +67,7 @@ Modality https://developer.apple.com/design/human-interface-guidelines/ios/app-a
         }
 * Alert View Controller
 
-        @IBAction func experiment(_ sender: Any) {
+        @IBAction func experiment() {
 
             let controller = UIAlertController()
             controller.title = "Test Alert"
