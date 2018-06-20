@@ -40,3 +40,42 @@ You can customize the appearance of the switch by changing the color used to tin
 
 ### Slider
 https://developer.apple.com/library/ios/documentation/UIKit/Reference/UISlider_Class/index.html  
+
+
+## Lesson 2 View Presentations and Segues
+### Navigation and Modality
+Navigation  https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/navigation/   
+Modality https://developer.apple.com/design/human-interface-guidelines/ios/app-architecture/modality/  
+
+
+### stock view controllers
+* Image Picker Controller
+
+        @IBAction func experiment(_ sender: Any) {
+
+            let nextController = UIImagePickerController()
+            self.present(nextController, animated: true, completion: nil)
+        }
+    
+* Activity View Controller
+
+        @IBAction func experiment(_ sender: Any) {
+
+            let image = UIImage()
+            let controller = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+            self.present(controller, animated: true, completion: nil)
+        }
+* Alert View Controller
+
+        @IBAction func experiment(_ sender: Any) {
+
+            let controller = UIAlertController()
+            controller.title = "Test Alert"
+            controller.message = "This is a test"
+
+            let okAction = UIAlertAction(title: "ok", style: UIAlertActionStyle.default) { action in self.dismiss(animated: true, completion: nil)
+            }
+
+            controller.addAction(okAction)
+            self.present(controller, animated: true, completion: nil)
+        }
