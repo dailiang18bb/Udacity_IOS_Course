@@ -1,3 +1,3 @@
 # UIKit Fundamentals
 
-## Lesson 1
+## Lesson 1 Outlets and Actions
