@@ -37,3 +37,6 @@ If you have a func to selector a private func in swift, it is required.
 https://developer.apple.com/documentation/uikit/uiswitch  
 The UISwitch class declares a property and a method to control its on/off state. As with UISlider, when the user manipulates the switch control (“flips” it) a valueChanged event is generated, which results in the control (if properly configured) sending an action message.  
 You can customize the appearance of the switch by changing the color used to tint the switch when it is on or off.
+
+### Slider
+https://developer.apple.com/library/ios/documentation/UIKit/Reference/UISlider_Class/index.html  
