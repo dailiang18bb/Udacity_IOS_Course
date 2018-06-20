@@ -8,5 +8,11 @@
 
 `!` indicate optional properties
 
+Will do more research to understand it
+
+
+
 ### The `self.` operator
+like `this` in Java
+
 
