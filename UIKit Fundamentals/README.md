@@ -21,3 +21,7 @@ You can add `@objc` to Swift properties or methods to make them accessibile from
 If you have a func to selector a private func in swift, it is required.
 
 
+### impelement all in code 
+
+
+### impelement in storyboard
