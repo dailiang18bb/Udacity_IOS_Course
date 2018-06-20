@@ -16,3 +16,8 @@ Will do more research to understand it
 like `this` in Java
 
 
+### `@objc func`
+You can add `@objc` to Swift properties or methods to make them accessibile from Objective-C code.  
+If you have a func to selector a private func in swift, it is required.
+
+
