@@ -5,3 +5,5 @@
 ### The ! operator
 
     var label: UILabel!
+
+`!` indicate optional properties
