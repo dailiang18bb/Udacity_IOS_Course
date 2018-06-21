@@ -122,3 +122,7 @@ example
             controller.secondValue = self.randomDiceValue()
         }        
     }
+
+## Lesson 3 The Delegate Pattern
+### delegate
+delegate is an object that excutes a group of method on behalf of another object
