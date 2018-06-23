@@ -80,7 +80,7 @@ Modality https://developer.apple.com/design/human-interface-guidelines/ios/app-a
             self.present(controller, animated: true, completion: nil)
         }
 
-### Customize view controllers
+### Customize view controllers 3 ways
 
     @IBAction func rollTheDice() {
 
@@ -100,3 +100,29 @@ Modality https://developer.apple.com/design/human-interface-guidelines/ios/app-a
 
         performSegue(withIdentifier: "rollDice", sender: self)
 
+### Button -> View
+
+* In the RollViewController file, the rollTheDice method is empty.
+* In the Storyboard file, a segue connects the rollTheDice Button directly to the DiceViewController.
+* In the attributes inspector, the segue is given the identifier, “rollDice”.
+
+### prepareForSegue //Use for passing data
+
+    func prepare(for: UIStoryboardSegue, sender: Any?)
+
+example
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "rollDice" {
+            
+            let controller = segue.destination as! DiceViewController
+            
+            controller.firstValue = self.randomDiceValue()
+            controller.secondValue = self.randomDiceValue()
+        }        
+    }
+
+## Lesson 3 The Delegate Pattern
+### delegate
+delegate is an object that excutes a group of method on behalf of another object
