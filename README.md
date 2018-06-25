@@ -43,4 +43,5 @@ Virtual Tourist https://www.udacity.com/course/ios-persistence-and-core-data--ud
 * Objective-C for Swift Developers https://www.udacity.com/course/objective-c-for-swift-developers--ud1009
 * Data Structures & Algorithms in Swift https://www.udacity.com/course/data-structures-and-algorithms-in-swift--ud1011
 * Server-Side Swift https://www.udacity.com/course/server-side-swift--ud1031
+* GCD https://classroom.udacity.com/courses/ud576
 

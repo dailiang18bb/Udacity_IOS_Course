@@ -126,3 +126,18 @@ example
 ## Lesson 3 The Delegate Pattern
 ### delegate
 delegate is an object that excutes a group of method on behalf of another object
+### UITextFieldDelegate
+* Editing lifecycle methods:  
+`textFieldShouldBeginEditing(_:)`  
+`textFieldDidBeginEditing(_:)`  
+`textFieldShouldEndEditing(_:)`  
+`textFieldDidEndEditing(_:)`
+
+* The primary method for controlling text:  
+`textField(_:shouldChangeCharactersIn:replacementString:)`
+
+* The clear button (the ‘x’ on the right side of some text fields):  
+`textFieldShouldClear(_:)`
+
+* The return key in the keyboard:  
+`textFieldShouldReturn(_:)`
