@@ -44,6 +44,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         firstTextField.delegate = self
         bottomTextField.delegate = self
         
+        print(firstTextField.frame.origin.y)
+        print(bottomTextField.frame)
+        print(view.frame.height)
         
         
         
@@ -79,17 +82,27 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     func subscribeToKeyboardNotifications() {
         
+        // Show keyboard
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: .UIKeyboardWillShow, object: nil)
+        // Hide keyboard
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: .UIKeyboardWillHide, object: nil)
+        
     }
     
     func unsubscribeFromKeyboardNotifications() {
         
         NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.removeObserver(self, name: .UIKeyboardWillHide, object: nil)
     }
     
     @objc func keyboardWillShow(_ notification:Notification) {
-        
-        view.frame.origin.y -= getKeyboardHeight(notification)
+        if(view.frame.origin.y == 0){
+            view.frame.origin.y -= getKeyboardHeight(notification)
+        }
+    }
+    
+    @objc func keyboardWillHide(_ notification:Notification){
+            view.frame.origin.y = 0
     }
     
     func getKeyboardHeight(_ notification:Notification) -> CGFloat {
@@ -99,8 +112,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return keyboardSize.cgRectValue.height
     }
     
-
     
+    // not working yey
+    func checkWhetherViewNeedShift(_ notification:Notification) -> Bool{
+        let value1 = view.frame.height - getKeyboardHeight(notification)
+        let value2 = firstTextField.frame.origin.y + firstTextField.frame.height
+        if value1 > value2 {
+            return false
+        } else {
+            return true
+        }
+    }
     
 }
 
